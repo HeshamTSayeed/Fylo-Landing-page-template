@@ -1,0 +1,436 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	text-transform: capitalize;
+}
+* {
+	box-sizing: border-box;
+}
+/* Start Header */
+header {
+	width: 1440px;
+	font-family: "Raleway", sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 60px 0px;
+}
+header nav .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header nav .links li {
+	list-style: none;
+	margin-left: 40px;
+	cursor: pointer;
+	color: hsl(243, 87%, 12%);
+	font-size: 18px;
+}
+@media (max-width: 767px) {
+	header {
+		width: 375px;
+		justify-content: flex-start;
+		padding: 20px;
+	}
+	.links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	header nav .links li {
+		font-size: 14px;
+		margin-left: 15px;
+	}
+	header .logo img {
+		width: 100px;
+	}
+}
+/* End Header */
+/* Start Fylo Section */
+.first {
+	width: 1440px;
+	padding: 100px 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family: "Raleway", sans-serif;
+	color: hsl(243, 87%, 12%);
+	align-items: center;
+}
+.first .text {
+	width: 100%;
+}
+.first .text h1 {
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.first .text p {
+	font-size: 19px;
+	line-height: 1.4;
+	font-family: "Open Sans", sans-serif;
+}
+form {
+	width: 100%;
+}
+.first .text .textbox {
+	padding: 15px;
+	width: 360px;
+	margin-right: 10px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid hsl(243deg 87% 12% / 27%);
+}
+.first .text .textbox::placeholder {
+	font-size: 16px;
+	color: #bbbbbb;
+}
+.first .text .button {
+	padding: 15px;
+	width: 225px;
+	font-size: 14px;
+	background-color: hsl(224, 93%, 58%);
+	color: white;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.first .text .button:hover {
+	background-color: hsl(224, 100%, 70%);
+}
+.first .img {
+	width: 100%;
+}
+.first .img img {
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.first {
+		width: 375px;
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+		padding: 60px 0;
+	}
+	.first .text {
+		width: 100%;
+		width: 100%;
+		padding: 20px 25px 20px 5px;
+	}
+	.first .text h1 {
+		font-size: 24px;
+	}
+	.first .text p {
+		font-size: 15px;
+		margin: 30px 0;
+	}
+	.first .text .textbox {
+		display: block;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		width: 100%;
+	}
+
+	.first .text .button {
+		display: block;
+		width: 100%;
+		margin-left: 10px;
+	}
+}
+/* End Fylo Section */
+/* Start Stay Productive Section */
+.Second {
+	background: url(../images/bg-curve-desktop.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1440px;
+	padding: 100px 60px;
+	margin-top: 120px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	font-family: "Raleway", sans-serif;
+	color: hsl(243, 87%, 12%);
+}
+.Second .text-two {
+	width: 100%;
+}
+.Second .text-two h2 {
+	font-size: 38px;
+	margin-top: 100px;
+}
+.Second .paragraph {
+	margin-right: 120px;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
+}
+.Second .text-two .special-paragraph {
+	color: hsl(170, 45%, 43%);
+	font-size: 18px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid hsl(170, 45%, 43%);
+	width: fit-content;
+	display: flex;
+	cursor: pointer;
+}
+.Second .text-two .special-paragraph:hover,
+.Second .text-two .special-paragraph use:hover {
+	color: hsl(170, 67%, 67%);
+	border-color: hsl(170, 67%, 67%);
+	fill: hsl(170, 67%, 67%);
+}
+.Second .text-two .special-paragraph svg {
+	margin-left: 10px;
+}
+.Second .img-two {
+	width: 100%;
+	margin: 60px 0 0 40px;
+}
+.Second .img-two img {
+	width: 100%;
+}
+.Second .text-two .card {
+	background-color: white;
+	width: 400px;
+	padding: 20px 30px;
+	margin-top: 40px;
+	font-family: "Open Sans", sans-serif;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px -5px #717171;
+}
+.Second .text-two .card .qoute {
+	width: 15px;
+	height: 15px;
+}
+.Second .text-two .card p {
+	line-height: 1.8;
+	color: hsl(243, 87%, 12%);
+	font-size: 14px;
+}
+.Second .text-two .card .avatar {
+	display: flex;
+	align-items: center;
+	margin-top: -20px;
+	margin-bottom: -15px;
+}
+.Second .text-two .card .avatar img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.Second .text-two .card .avatar .avatar-two {
+	margin-left: 15px;
+}
+.Second .text-two .card .avatar .avatar-two h4 {
+	margin-bottom: -10px;
+	font-size: larger;
+	margin-top: 20px;
+}
+@media (max-width: 767px) {
+	.Second {
+		background: url(../images/bg-curve-mobile.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 375px;
+		padding: 60px 20px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.Second .text-two h2 {
+		font-size: 17px;
+		padding: 20px;
+	}
+	.Second .text-two .card {
+		width: fit-content;
+		margin: 60px auto;
+		padding: 30px 5px 30px 30px;
+	}
+	.Second .text-two .card p {
+		font-size: 12px;
+	}
+	.Second .paragraph {
+		width: 100%;
+		font-size: 13px;
+		padding: 0 20px 0 0;
+	}
+	.Second .text-two .special-paragraph {
+		margin: 40px auto;
+		font-size: 16px;
+	}
+	.Second .text-two .card .avatar {
+		margin-top: -10px;
+	}
+	.Second .text-two .card .avatar img {
+		width: 35px;
+		height: 35px;
+	}
+	.Second .text-two .card .avatar .avatar-two {
+		margin-left: 10px;
+	}
+	.Second .text-two .card .avatar .avatar-two h4 {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	.Second .text-two .card .avatar .avatar-two .pa {
+		font-size: 11px;
+	}
+}
+/* End Stay Productive Section */
+/* Start Access Section */
+.three {
+	width: 1440px;
+	background-color: hsl(238, 22%, 44%);
+	padding: 100px 60px;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	column-gap: 200px;
+}
+.three .text-three {
+	width: 100%;
+}
+.three .text-three h1 {
+	font-size: 35px;
+	font-family: "Raleway", sans-serif;
+}
+.three .text-three p {
+	font-size: 18px;
+	line-height: 1.6;
+	color: hsl(238deg 39% 90%);
+}
+.three .form {
+	width: 100%;
+}
+.three .form .textbox-2 {
+	padding: 15px;
+	width: 500px;
+	margin-bottom: 15px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid hsl(243deg 87% 12% / 27%);
+	box-shadow: 0px 2px 10px 1px #0000006b;
+}
+.three .form .textbox-2::placeholder {
+	font-size: 16px;
+	color: #bbbbbb;
+}
+.three .form .button-2 {
+	padding: 15px;
+	width: 225px;
+	font-size: 14px;
+	background-color: hsl(224, 93%, 58%);
+	color: white;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 2px 10px 1px #0000006b;
+}
+.three .form .button-2:hover {
+	background-color: hsl(224, 100%, 70%);
+}
+@media (max-width: 767px) {
+	.three {
+		width: 375px;
+		padding: 60px 20px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.three .text-three {
+		padding: 0 20px 20px;
+	}
+	.three .text-three h1 {
+		font-size: 20px;
+		padding: 0px 20px 20px;
+	}
+	.three .text-three p {
+		font-size: 14px;
+	}
+	.three .form .textbox-2 {
+		width: 80%;
+	}
+	.three .form .button-2 {
+		width: 80%;
+	}
+}
+/* End Access Section */
+/* Start Footer Section */
+footer {
+	width: 1440px;
+	background-color: hsl(243, 87%, 12%);
+	color: #d5d3f0;
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 180px 60px 60px;
+	align-items: flex-start;
+	font-size: 14px;
+}
+path {
+	fill: white;
+}
+footer .sec-one a {
+	display: inline-block;
+	margin-bottom: 20px;
+	cursor: text;
+}
+footer .sec-one p {
+	position: relative;
+    top: -28px;
+    left: 35px;
+    margin-bottom: -5px;
+}
+footer .sec-one img {
+	display: block;
+}
+footer .sec-two,
+.sec-three,
+.sec-four {
+	margin-top: 30px;
+}
+footer ul {
+	list-style: none;
+}
+footer ul li {
+	margin-top: 20px;
+	cursor: pointer;
+}
+footer ul li:hover {
+	color: #979bff;
+}
+footer .list-three {
+	display: flex;
+}
+footer .list-three li {
+	padding: 5px;
+	margin-right: 20px;
+	border: 2px solid #e1e1e1;
+	border-radius: 50%;
+}
+footer .list-three li:hover {
+	border: 2px solid #979bff;
+}
+footer .list-three li.face {
+	padding: 5px 8px 5px 7px;
+}
+@media (max-width: 767px) {
+	footer {
+		width: 375px;
+		display: flex;
+		flex-direction: column;
+		padding: 60px 40px;
+	}
+	footer ul {
+		padding: 0;
+	}
+	footer .sec-four {
+		margin: 20px auto 0;
+	}
+}
+/* End Footer Section */
